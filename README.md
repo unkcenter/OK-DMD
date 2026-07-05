@@ -40,7 +40,7 @@ Because **OK-DMD** tracks the spectral footprint (the persistent eigenvalues) of
 You can install the package locally in editable mode:
 
 ```bash
-git clone https://github.com/UnK-Center-Inc/ok-dmd.git
+git clone https://github.com/unkcenter/ok-dmd.git
 cd ok-dmd
 pip install -e .
 ```
@@ -64,13 +64,13 @@ Under an aggressive **92.2% compression budget** (restricting the KV-cache of Qw
  Total Sequence Length:    817 tokens
  KV-Cache Budget Limit:    64 tokens (Aggressive Compression)
 ------------------------------------------------------------
- -> Mean Attention Coherence (H2O Baseline): 0.997470
- -> Mean Attention Coherence (OK-DMD Ours):  0.998259
+ -> Mean Attention Coherence (H2O):      0.997211
+ -> Mean Attention Coherence (OK-DMD):   0.997972
 ------------------------------------------------------------
 [SUCCESS] OK-DMD outperformed H2O! The dynamic attractor preserved the old Astronomy context.
 ```
 
-*(You can save your generated plot as `assets/benchmark_results.png` and reference it here to visually showcase the stability of the OK-DMD curve).*
+![Stress Test Results](assets/benchmark_results.png)
 
 ---
 
